@@ -20,6 +20,15 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+
+
+
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
@@ -41,11 +50,29 @@
         
 </head>
 <body style="background-image: url(black.jpg)">
- <header>
+ 
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">MAP PROJECT</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="map07.html">CURRNT PAGE</a></li>
+            <li><a href="map1.html">WORLD MAP</a></li>
+            <li><a href="mapindi.html">INDIA POPULATION</a></li>
+            <li><a href="map07.html">COLOR FRAME WORLD MAP</a></li>
+            <li><a href="aboutme.html">ABOUT</a></li>          
+        </ul>
+        </div>
+      </nav>
+
+    <header>
     </header>
     </div>
 
- <h3>this map describe population of different country</h3>
+ <h1 style="padding-left: 400px;color:silver;">this map describe population of different country</h1>
 
             <div class="folium-map" id="map_205bc62f492642a98db9d93ad586e98c" ></div>
 
@@ -63,7 +90,7 @@
                 {
                     center: [28.6466773, 76.813073],
                     crs: L.CRS.EPSG3857,
-                    zoom: 10,
+                    zoom: 5,
                     zoomControl: true,
                     preferCanvas: false,
                 }
